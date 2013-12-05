@@ -5,7 +5,7 @@ a-blog cms のグローバル変数一覧を表示するテンプレート
 
 テーマフォルダの適当な所に配置して、
 
-<!--#include file="/include/gvariables.html" -->
+    <!--#include file="/include/gvariables.html" -->
 
 のようにインクルードして使ってください。
 
