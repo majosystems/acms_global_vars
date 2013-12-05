@@ -1,0 +1,382 @@
+<style>
+#acms_gvariables{clear:both;padding:2em 0 0 0;margin:0;}
+#acms_gvariables table {
+	border-collapse:collapse;
+	border-spacing:0;
+	background-color:#ffffff;
+	empty-cells:show;
+	text-align:left;
+	font-size:1em;
+	line-height:1.8;
+	color:#555;
+	width:100%;
+	margin:0 0 3em 0;
+}
+#acms_gvariables th,
+#acms_gvariables td{
+    border-bottom:dashed 1px #ccc;
+}
+#acms_gvariables th {
+	background-color:#AFEEEE;
+	font-weight:normal;
+	width:19em;
+    padding:0.3em 0;
+    vertical-align:top;
+    font-size:0.875em;
+}
+#acms_gvariables th span{
+    padding:0 0.8em;
+}
+#acms_gvariables td {
+    padding:0.3em 0.8em;    
+}
+#acms_gvariables tr:hover th{
+    background-color:#00ccff;
+}
+#acms_gvariables tr:hover td{
+    background-color:#fbfbfb;
+}
+#acms_gvariables td span{color:#6699cc;display:block;width:19em;}
+#acms_gvariables td em{font-size:0.875em;color:#888;}
+#acms_gvariables tr:hover td span{color:#ff3399;}
+</style>
+<div id="acms_gvariables">
+  <h3>IDの出力</h3>
+  <table>
+    <tr>
+      <th><span>RBID</span></th>
+      <td><span>%{RBID}</span><em>ルートブログID ( ※ver 1.4.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>PBID</span></th>
+      <td><span>%{PBID}</span><em>親ブログID ( ※ver 1.4.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>BID</span></th>
+      <td><span>%{BID}</span><em>ブログID</em></td>
+    </tr>
+    <tr>
+      <th><span>RCID</span></th>
+      <td><span>%{RCID}</span><em>ルートカテゴリーID ( ※ver 1.3.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>PCID</span></th>
+      <td><span>%{PCID}</span><em>親カテゴリーID ( ※ver 1.3.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>CID</span></th>
+      <td><span>%{CID}</span><em>カテゴリーID</em></td>
+    </tr>
+    <tr>
+      <th><span>EID</span></th>
+      <td><span>%{EID}</span><em>エントリーID</em></td>
+    </tr>
+    <tr>
+      <th><span>UID</span></th>
+      <td><span>%{UID}</span><em>ユーザーID</em></td>
+    </tr>
+    <tr>
+      <th><span>ALIAS_ID</span></th>
+      <td><span>%{ALIAS_ID}</span><em>エイリアスID ( ※ver 1.4.0で追加 )</em></td>
+    </tr>
+  </table>
+  <h3>コードの出力</h3>
+  <table>
+    <tr>
+      <th><span>RBCD</span></th>
+      <td><span>%{RBCD}</span><em>ルートブログコード ( ※ver 1.4.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>PBCD</span></th>
+      <td><span>%{PBCD}</span><em>親ブログコード ( ※ver 1.4.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>BCD</span></th>
+      <td><span>%{BCD}</span><em>ブログコード</em></td>
+    </tr>
+    <tr>
+      <th><span>RCCD</span></th>
+      <td><span>%{RCCD}</span><em>ルートカテゴリーコード ( ※ver 1.3.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>PCCD</span></th>
+      <td><span>%{PCCD}</span><em>親カテゴリーコード ( ※ver 1.3.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>CCD</span></th>
+      <td><span>%{CCD}</span><em>カテゴリーコード</em></td>
+    </tr>
+    <tr>
+    <tr>
+      <th><span>ECD</span></th>
+      <td><span>%{ECD}</span><em>エントリーコード</em></td>
+    </tr>
+    <tr>
+      <th><span>UCD</span></th>
+      <td><span>%{UCD}</span><em>ユーザーコード</em></td>
+    </tr>
+    <tr>
+      <th><span>ALIAS_CODE</span></th>
+      <td><span>%{ALIAS_CODE}</span><em>エイリアスコード ( ※ver 1.4.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>SESSION_USER_CODE</span></th>
+      <td><span>%{SESSION_USER_CODE}</span><em>ログイン中のユーザーコード ( ※ver 1.5.0で追加 )</em></td>
+    </tr>
+  </table>
+  <h3>名前の出力</h3>
+  <table>
+    <tr>
+      <th><span>ROOT_BLOG_NAME</span></th>
+      <td><span>%{ROOT_BLOG_NAME}</span><em>表示ページが属するルートブログの名前 ( ※ver 1.4.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>PARENT_BLOG_NAME</span></th>
+      <td><span>%{PARENT_BLOG_NAME}</span><em>表示ページが属する親ブログの名前 ( ※ver 1.4.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>BLOG_NAME</span></th>
+      <td><span>%{BLOG_NAME}</span><em>表示ページが属するブログの名前</em></td>
+    </tr>
+    <tr>
+      <th><span>ROOT_CATEGORY_NAME</span></th>
+      <td><span>%{ROOT_CATEGORY_NAME}</span><em>表示ページが属するルートカテゴリーの名前 ( ※ver 1.3.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>PARENT_CATEGORY_NAME</span></th>
+      <td><span>%{PARENT_CATEGORY_NAME}</span><em>表示ページが属する親カテゴリーの名前 ( ※ver 1.3.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>CATEGORY_NAME</span></th>
+      <td><span>%{CATEGORY_NAME}</span><em>表示ページが属するカテゴリーの名前</em></td>
+    </tr>
+    <tr>
+      <th><span>ENTRY_TITLE</span></th>
+      <td><span>%{ENTRY_TITLE}</span><em>表示ページが属するエントリーの名前</em></td>
+    </tr>
+    <tr>
+      <th><span>USER_NAME</span></th>
+      <td><span>%{USER_NAME}</span><em>ユーザーの名前</em></td>
+    </tr>
+    <tr>
+      <th><span>ALIAS_NAME</span></th>
+      <td><span>%{ALIAS_NAME}</span><em>エイリアスの名前 ( ※ver 1.4.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>SESSION_USER_NAME</span></th>
+      <td><span>%{SESSION_USER_NAME}</span><em>ログイン中のユーザーの名前 ( ※ver 1.5.0で追加 )</em></td>
+    </tr>
+  </table>
+  <h3>URLコンテキストの出力</h3>
+  <table>
+    <tr>
+      <th><span>KEYWORD</span></th>
+      <td><span>%{KEYWORD}</span><em>URLコンテキスト上で、指定されたキーワード ( ※ver 1.2.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>FIELD</span></th>
+      <td><span>%{FIELD}</span><em>URLコンテキスト上で、指定されたフィールド ( ※ver 1.2.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>TAG</span></th>
+      <td><span>%{TAG}</span><em>URLコンテキスト上で、指定されたタグ ( ※ver 1.2.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>PAGE</span></th>
+      <td><span>%{PAGE}</span><em>URLコンテキスト上で、指定されたページ番号 ( ※ver 1.2.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>DATE</span></th>
+      <td><span>%{DATE}</span><em>URLコンテキスト上で、指定された日付 ( ※ver 1.2.0で追加 )</em></td>
+    </tr>
+  </table>
+  <h3>URL・パスの出力</h3>
+  <table>
+    <tr>
+      <th><span>HOME_URL</span></th>
+      <td><span>%{HOME_URL}</span><em>ルートブログのトップページのURL ( ※ver 1.2.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>ROOT_BLOG_URL</span></th>
+      <td><span>%{ROOT_BLOG_URL}</span><em>ルートブログのトップページのURL ( ※ver 1.4.2で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>PARENT_BLOG_URL</span></th>
+      <td><span>%{PARENT_BLOG_URL}</span><em>親ブログのトップページのURL ( ※ver 1.4.2で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>BLOG_URL</span></th>
+      <td><span>%{BLOG_URL}</span><em>ブログのトップページのURL ( ※ver 1.2.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>ROOT_CATEGORY_URL</span></th>
+      <td><span>%{ROOT_CATEGORY_URL}</span><em>ルートカテゴリーページのURL ( ※ver 1.4.2で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>PARENT_CATEGORY_URL</span></th>
+      <td><span>%{PARENT_CATEGORY_URL}</span><em>親カテゴリーページのURL ( ※ver 1.4.2で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>CATEGORY_URL</span></th>
+      <td><span>%{CATEGORY_URL}</span><em>カテゴリーページのURL ( ※ver 1.4.2で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>BASE_URL</span></th>
+      <td><span>%{BASE_URL}</span><em>基本となるURL ( ブログのトップページのURLとほぼ等価 )</em></td>
+    </tr>
+    <tr>
+      <th><span>HTTP_ROOT</span></th>
+      <td><span>%{HTTP_ROOT}</span><em>URLで表されるルートディレクトリ</em></td>
+    </tr>
+    <tr>
+      <th><span>INHERLINK</span></th>
+      <td><span>%{INHERLINK}</span><em>表示中のURL</em></td>
+    </tr>
+    <tr>
+      <th><span>PERMALINK</span></th>
+      <td><span>%{PERMALINK}</span><em>表示中ページへのパーマリンク</em></td>
+    </tr>
+    <tr>
+      <th><span>ROOT_DIR</span></th>
+      <td><span>%{ROOT_DIR}</span><em>ドキュメントルートからindex.phpのある場所までのパス</em></td>
+    </tr>
+    <tr>
+      <th><span>IMAGES_DIR</span></th>
+      <td><span>%{IMAGES_DIR}</span><em>システムが使用する画像のあるディレクトリ( /images )のパス</em></td>
+    </tr>
+    <tr>
+      <th><span>ARCHIVES_DIR</span></th>
+      <td><span>%{ARCHIVES_DIR}</span><em>アーカイブディレクトリ( /archives )のパス</em></td>
+    </tr>
+    <tr>
+      <th><span>THEMES_DIR</span></th>
+      <td><span>%{THEMES_DIR}</span><em>テーマディレクトリ ( /thems )のパス</em></td>
+    </tr>
+    <tr>
+      <th><span>CURRENT_THEMES_DIR</span></th>
+      <td><span>%{CURRENT_THEMES_DIR}</span><em>表示中ページで使用されているテーマのパス</em></td>
+    </tr>
+    <tr>
+      <th><span>SCRIPT_ROOT</span></th>
+      <td><span>%{SCRIPT_ROOT}</span><em>システムのメインスクリプトのパス</em></td>
+    </tr>
+    <tr>
+      <th><span>ALIAS_DOMAIN</span></th>
+      <td><span>%{ALIAS_DOMAIN}</span><em>エイリアスのドメイン ( ※ver 1.4.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>REQUESET_PATH</span></th>
+      <td><span>%{REQUESET_PATH}</span><em>表示URL中の、a-blog cms設置ディレクトリ以降のパス ( ※ver 1.5.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>REQUESET_DIRNAME</span></th>
+      <td><span>%{REQUESET_DIRNAME}</span><em>表示URL中の、a-blog cms設置ディレクトリ以降のURL ( ※ver 1.5.0で追加 )</em></td>
+    </tr>
+  </table>
+  <h3>コンフィグの出力</h3>
+  <table>
+    <tr>
+      <th><span>META_KEYWORDS</span></th>
+      <td><span>%{META_KEYWORDS}</span><em>コンフィグで指定したメタ情報のキーワード</em></td>
+    </tr>
+    <tr>
+      <th><span>META_DESCRIPTION</span></th>
+      <td><span>%{META_DESCRIPTION}</span><em>コンフィグで指定したメタ情報のディスクリプション</em></td>
+    </tr>
+    <tr>
+      <th><span>SYSTEM_MAIL</span></th>
+      <td><span>%{SYSTEM_MAIL}</span><em>コンフィグで指定したシステムが使用するメールアドレス ( ※ver 1.5.0で廃止 )</em></td>
+    </tr>
+    <tr>
+      <th><span>CHARSET</span></th>
+      <td><span>%{CHARSET}</span><em>コンフィグで指定した出力文字コード</em></td>
+    </tr>
+    <tr>
+      <th><span>GOOGLE_API_KEY_ROOT</span></th>
+      <td><span>%{GOOGLE_API_KEY_ROOT}</span><em>config.server.phpに指定したルートのGoogle MAPS APIキー</em></td>
+    </tr>
+    <tr>
+      <th><span>GOOGLE_API_KEY</span></th>
+      <td><span>%{GOOGLE_API_KEY}</span><em>コンフィグで指定したGoogle MAPS APIキー</em></td>
+    </tr>
+    <tr>
+      <th><span>MAIL_SUBSCRIBE_ADMIN_FROM</span></th>
+      <td><span>%{MAIL_SUBSCRIBE_ADMIN_FROM}</span><em>コンフィグで指定した管理者宛読者登録通知メールの送信元メールアドレス ( ※ver 1.5.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>MAIL_SUBSCRIBE_FROM</span></th>
+      <td><span>%{MAIL_SUBSCRIBE_FROM}</span><em>コンフィグで指定した読者登録通知メールの送信元メールアドレス ( ※ver 1.5.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>MAIL_REMIND_FROM</span></th>
+      <td><span>%{MAIL_REMIND_FROM}</span><em>コンフィグで指定したパスワード再発行通知メールの送信元メールアドレス ( ※ver 1.5.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>MAIL_COMMENT_FROM</span></th>
+      <td><span>%{MAIL_COMMENT_FROM}</span><em>コンフィグで指定したコメント通知メールの送信元メールアドレス ( ※ver 1.5.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>MAIL_TRACKBACK_FROM</span></th>
+      <td><span>%{MAIL_TRACKBACK_FROM}</span><em>コンフィグで指定したトラックバック再発行通知メールの送信元メールアドレス ( ※ver 1.5.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>MAIL_MAGAZINE_FROM</span></th>
+      <td><span>%{MAIL_MAGAZINE_FROM}</span><em>コンフィグで指定したメールマガジンの送信元メールアドレス ( ※ver 1.5.0で追加 )</em></td>
+    </tr>
+  </table>
+  <h3>日付・時間の出力</h3>
+  <p>（キャッシュが有効の場合はキャッシュ時点の情報になります）</p>
+  <table>
+    <tr>
+      <th><span>NOW_DATE</span></th>
+      <td><span>%{NOW_DATE}</span><em>表示した時点の日付 ( ※ver 1.2.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>NOW_TIME</span></th>
+      <td><span>%{NOW_TIME}</span><em>表示した時点の時間 ( ※ver 1.2.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>Y, m, d...</span></th>
+      <td><span>%{Y}, %{m}, %{d}...<em>phpの<a href="http://jp.php.net/manual/ja/function.date.php">date関数</a>に指定出来る日付文字列の書式 </em></td>
+    </tr>
+  </table>
+  <h3>その他</h3>
+  <table>
+    <tr>
+      <th><span>DOMAIN</span></th>
+      <td><span>%{DOMAIN}</span><em>表示しているブログのドメイン名</em></td>
+    </tr>
+    <tr>
+      <th><span>VERSION</span></th>
+      <td><span>%{VERSION}</span><em>動作中のa-blog cmsのバージョン情報</em></td>
+    </tr>
+    <tr>
+      <th><span>SEARCH_ENGINE_KEYWORD</span></th>
+      <td><span>%{SEARCH_ENGINE_KEYWORD}</span><em>検索エンジンからのトラフィックだった場合のリファラーに含まれる検索キーワード（キャッシュ無効時のみ使用可）</em></td>
+    </tr>
+    <tr>
+      <th><span>UA</span></th>
+      <td><span>%{UA}</span><em>クライアントのユーザーエージェント情報 ( ※ver 1.3.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>UA_GROUP</span></th>
+      <td><span>%{UA_GROUP}</span><em>クライアントのユーザーエージェントの所属グループ情報 ( ※ver 1.5.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>REMOTE_ADDR</span></th>
+      <td><span>%{REMOTE_ADDR}</span><em>接続元リモートアドレス情報 ( ※ver 1.3.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>VIEW</span></th>
+      <td><span>%{VIEW}</span><em>ページの表示状態（トップ・一覧・詳細）を示す文字列（top, index, entry）を出力する ( ※ver 1.3.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>SESSION_USER_AUTH</span></th>
+      <td><span>%{SESSION_USER_AUTH}</span><em>ログイン中のユーザーの権限を示す文字列（administrator, editor, contributor, subscriber）を出力する ( ※ver 1.4.0で追加 )</em></td>
+    </tr>
+    <tr>
+      <th><span>SESSION_USER_MAIL</span></th>
+      <td><span>%{SESSION_USER_MAIL}</span><em>ログイン中のユーザーのメールアドレス ( ※ver 1.5.0で追加 )</em></td>
+    </tr>
+  </table>
+</div>
